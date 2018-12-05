@@ -41,7 +41,7 @@ gem 'sass-rails', '~> 5.0'
 # Jquery
 gem 'jquery-rails'
 # the font-awesome font bundled as an asset for the rails asset pipeline
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
