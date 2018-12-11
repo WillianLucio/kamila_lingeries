@@ -42,6 +42,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 # the font-awesome font bundled as an asset for the rails asset pipeline
 gem 'font-awesome-rails'
+# Flexible authentication solution for Rails with Warden.
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
