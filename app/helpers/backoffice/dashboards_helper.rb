@@ -1,0 +1,2 @@
+module Backoffice::DashboardsHelper
+end
