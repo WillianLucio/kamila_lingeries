@@ -1,0 +1,32 @@
+$first-orange: #FE993A;
+$second-orange: #FEC078;
+$thirty-orange: #FFF2E6;
+
+
+.sidebar-backoffice {
+  border: solid;
+  border-width: 1px;
+  border-color: #E7E7E7;
+  padding-top: 5px;
+  height: 100%;
+
+  li {
+    a {
+      border-radius: 0px;
+      color: #767676;
+    }
+    a:hover {
+      background-color: $thirty-orange;
+      color: #767676;
+    }
+  }
+  li.active {
+    a {
+      background-color: $first-orange;
+    }
+    a:hover {
+      background: $second-orange;
+    }
+  }
+}
+
