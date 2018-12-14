@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profile: one
+  operator: MyString
+  number: MyString
+  type: 1
+
+two:
+  profile: two
+  operator: MyString
+  number: MyString
+  type: 1
