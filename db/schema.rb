@@ -10,7 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_11_182646) do
+ActiveRecord::Schema.define(version: 2018_12_14_121755) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.integer "profile_id"
+    t.string "city"
+    t.string "neighborhood"
+    t.string "street"
+    t.string "number"
+    t.string "complement"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["profile_id"], name: "index_addresses_on_profile_id"
+  end
+
+  create_table "phones", force: :cascade do |t|
+    t.integer "profile_id"
+    t.string "operator"
+    t.string "number"
+    t.integer "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["profile_id"], name: "index_phones_on_profile_id"
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "name"
+    t.date "birthdate"
+    t.integer "sex"
+    t.string "facebook"
+    t.integer "role"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
