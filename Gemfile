@@ -54,6 +54,12 @@ gem 'cancancan', '~> 2.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # RSpec for Rails-3+
+  gem 'rspec-rails', '~> 3.8'
+  # Factory Bot Rails
+  gem 'factory_bot_rails'
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
 end
 
 group :development do
